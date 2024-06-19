@@ -1,0 +1,20 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "thomasmfx",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
