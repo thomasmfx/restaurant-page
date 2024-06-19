@@ -17,7 +17,7 @@ input, button, textarea, select { font: inherit; }
 /* ------------------------------------ */
 
 :root {
-    --alabaster: #EBE7DBff;
+    --alabaster: #f0ede4;
     --bone: #EFE6D7ff;
     --caput-mortuum: #522C1Eff;
     --black: #0A0506ff;
