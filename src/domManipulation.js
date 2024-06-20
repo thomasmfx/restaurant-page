@@ -34,3 +34,10 @@ export function removeBtnsPaint(){
         btn.className = '';
     });
 };
+
+export function removeCurrentTab() {
+    const contentDiv = document.querySelector('#content');
+    if(contentDiv.firstElementChild) {
+        contentDiv.firstElementChild.remove()
+    };
+};
