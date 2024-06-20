@@ -2,21 +2,21 @@ import {
     createElement,
     createElementWithId,
     createElementWithClass,
-    createImgWithSrc
+    createImgWithSrc,
+    removeCurrentTab
 } from './domManipulation.js';
 
-const contentDiv = document.querySelector('#content');
-const card = createElementWithId('div', 'card');
-card.appendChild(createElementWithId('h1', 'home-heading', 'Soul Coffee'));
+const container = document.querySelector('#container');
+const content = createElementWithClass('div', 'content');
 
 function showHomeTab() {
-    // if(!contentDiv.firstElementChild) {
-        if(contentDiv.className !== 'homeTab') {
-            contentDiv.className = 'homeTab';
-            firstSection();
-            secondSection();
-        };
-    // };
+    if(content.id !== 'home-tab') {
+        removeCurrentTab()
+        content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
+        content.id = 'home-tab';
+        firstSection();
+        secondSection();
+    };
 };
 
 function firstSection() {
@@ -34,8 +34,8 @@ function firstSection() {
     row.appendChild(sideTextDiv);
     row.appendChild(img);
     
-    card.appendChild(row);
-    contentDiv.append(card);
+    content.appendChild(row);
+    container.append(content);
 };
 
 function secondSection() {
@@ -53,8 +53,7 @@ function secondSection() {
     row.appendChild(img);
     row.appendChild(sideTextDiv);
     
-    card.appendChild(row);
-    contentDiv.append(card);
+    content.appendChild(row);
 };
 
 export default showHomeTab;

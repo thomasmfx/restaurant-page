@@ -1,6 +1,9 @@
 import './style.css';
 import showHomeTab from './home.js';
-import { paintBtn, removeBtnsPaint } from './domManipulation.js';
+import { 
+    paintBtn,
+    removeBtnsPaint
+} from './domManipulation.js';
 
 const homeBtn = document.querySelector('#home');
 const menuBtn = document.querySelector('#menu');
@@ -24,12 +27,12 @@ menuBtn.addEventListener('click', () => {
 contactBtn.addEventListener('click', () => {
     removeBtnsPaint();
     paintBtn(contactBtn);
-    showHomeTab();
+    // showContactTab();
 });
 
 aboutBtn.addEventListener('click', () => {
     removeBtnsPaint();
     paintBtn(aboutBtn);
-    showHomeTab();
+    // showAboutTab();
 });
 
