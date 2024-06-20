@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Reset */
 *, *::before, *::after { box-sizing: border-box; }
@@ -25,7 +25,7 @@ input, button, textarea, select { font: inherit; }
 }
 
 body {
-    font-family: Inter;
+    font-family: 'Noto Serif';
     background: url(../assets/wallpaper_coffee.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,13 +76,54 @@ button:hover {
 }
 
 #card {
+    padding: 1em;
     border-radius: 25px;
     width: 700px;
     height: 800px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2em;
 
     background: rgba(240, 237, 228, 0.82);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.4px);
     -webkit-backdrop-filter: blur(9.4px);
+}
+
+#home-heading {
+    color: var(--bistre);
+    font-size: 2rem;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2em;
+}
+
+.row > img{
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10px;
+}
+
+.text > p {
+    margin-top: 1em;
+    width: 30ch;
+}
+
+.text > h2 {
+    font-size: 1.2rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
 }
