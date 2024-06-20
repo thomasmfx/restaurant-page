@@ -25,8 +25,11 @@ input, button, textarea, select { font: inherit; }
 }
 
 body {
+    font-family: Inter;
     background: url(../assets/wallpaper_coffee.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bone);
 }
 
 header {
@@ -42,10 +45,11 @@ nav {
     padding: 0.3em;
     margin-top: 1em;
 
-    background-color: var(--alabaster);
+    background: rgba(240, 237, 228, 0.82);
     border-radius: 100px;
-
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
 }
 
 button {
@@ -63,4 +67,22 @@ button:hover {
     cursor: pointer;
     background-color: #210F04;
     color: #FFFFFF;
+}
+
+#content {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+#card {
+    border-radius: 25px;
+    width: 700px;
+    height: 800px;
+
+    background: rgba(240, 237, 228, 0.82);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
 }
