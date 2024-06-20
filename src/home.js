@@ -3,7 +3,7 @@ import {
     createElementWithId,
     createElementWithClass,
     createImgWithSrc
-} from './createElements.js';
+} from './domManipulation.js';
 
 const contentDiv = document.querySelector('#content');
 const card = createElementWithId('div', 'card');

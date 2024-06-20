@@ -23,3 +23,14 @@ export function createImgWithSrc(src) {
     img.src = src;
     return img;
 };
+
+export function paintBtn(btn) {
+    btn.className = 'current-tab';
+};
+
+export function removeBtnsPaint(){
+    const btns = document.querySelectorAll('button');
+    btns.forEach(btn => {
+        btn.className = '';
+    });
+};

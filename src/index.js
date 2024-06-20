@@ -1,5 +1,6 @@
 import './style.css';
 import showHomeTab from './home.js';
+import { paintBtn, removeBtnsPaint } from './domManipulation.js';
 
 const homeBtn = document.querySelector('#home');
 const menuBtn = document.querySelector('#menu');
@@ -13,16 +14,3 @@ homeBtn.addEventListener('click', () =>{
     paintBtn(homeBtn);
     showHomeTab();
 });
-
-
-
-function paintBtn(btn) {
-    btn.className = 'current-tab';
-};
-
-function removeBtnsPaint(){
-    const btns = document.querySelectorAll('button');
-    btns.forEach(btn => {
-        btn.className = '';
-    });
-};
