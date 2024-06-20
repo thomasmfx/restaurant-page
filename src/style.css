@@ -67,22 +67,19 @@ button:hover {
     cursor: pointer;
 }
 
-#content {
+#container {
     margin-top: 2em;
     display: flex;
     justify-content: center;
 }
 
-#card {
-    padding: 1em;
-    border-radius: 25px;
+/* Home Tab */
+
+#container > .content {
     width: 700px;
     height: 800px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 2em;
+    padding: 1em;
+    border-radius: 25px;
 
     background: rgba(240, 237, 228, 0.82);
     border-radius: 16px;
@@ -91,7 +88,14 @@ button:hover {
     -webkit-backdrop-filter: blur(9.4px);
 }
 
-#home-heading {
+#home-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2em;
+}
+
+#heading {
     color: var(--bistre);
     font-size: 2rem;
     flex-basis: 100%;
@@ -130,3 +134,14 @@ button:hover {
     background-color: #210F04;
     color: #FFFFFF;
 }
+
+/* Menu Tab */
+
+
+
+/* Contact Tab */
+
+
+
+/* About Tab */
+

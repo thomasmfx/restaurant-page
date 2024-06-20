@@ -13,7 +13,7 @@ export function createElementWithId(el, id, text) {
 
 export function createElementWithClass(el, cl, text) {
     let element = document.createElement(`${el}`);
-    element.classList.add(`${cl}`)
+    element.classList.add(`${cl}`);
     element.textContent = text;
     return element;
 };
@@ -36,8 +36,8 @@ export function removeBtnsPaint(){
 };
 
 export function removeCurrentTab() {
-    const contentDiv = document.querySelector('#content');
-    if(contentDiv.firstElementChild) {
-        contentDiv.firstElementChild.remove()
+    const container = document.querySelector('#container');
+    if(container.firstElementChild) {
+        container.firstElementChild.remove();
     };
 };
