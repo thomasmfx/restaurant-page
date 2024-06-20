@@ -7,12 +7,12 @@ import {
 
 const contentDiv = document.querySelector('#content');
 const card = createElementWithId('div', 'card');
+card.appendChild(createElementWithId('h1', 'home-heading', 'Soul Coffee'));
 
 function showHomeTab() {
     // if(!contentDiv.firstElementChild) {
         if(contentDiv.className !== 'homeTab') {
             contentDiv.className = 'homeTab';
-            card.appendChild(createElementWithId('h1', 'home-heading', 'Soul Coffee'));
             firstSection();
             secondSection();
         };
