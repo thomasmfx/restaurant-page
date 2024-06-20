@@ -1,3 +1,11 @@
 import './style.css';
-// import Favicon from './assets/favicon_coffee.svg';
+import showHomeTab from './home.js';
+
+window.onload = showHomeTab();
+
+const homeBtn = document.querySelector('#home');
+homeBtn.addEventListener('click', () =>{
+    showHomeTab();
+});
+
 
