@@ -14,3 +14,22 @@ homeBtn.addEventListener('click', () =>{
     paintBtn(homeBtn);
     showHomeTab();
 });
+
+menuBtn.addEventListener('click', () => {
+    removeBtnsPaint();
+    paintBtn(menuBtn);
+    showHomeTab();
+});
+
+contactBtn.addEventListener('click', () => {
+    removeBtnsPaint();
+    paintBtn(contactBtn);
+    showHomeTab();
+});
+
+aboutBtn.addEventListener('click', () => {
+    removeBtnsPaint();
+    paintBtn(aboutBtn);
+    showHomeTab();
+});
+
