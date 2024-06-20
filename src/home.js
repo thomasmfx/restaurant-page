@@ -9,7 +9,7 @@ import {
 const container = document.querySelector('#container');
 const content = createElementWithClass('div', 'content');
 
-function showHomeTab() {
+export default function showHomeTab() {
     if(content.id !== 'home-tab') {
         removeCurrentTab()
         content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
@@ -55,5 +55,3 @@ function secondSection() {
     
     content.appendChild(row);
 };
-
-export default showHomeTab;
