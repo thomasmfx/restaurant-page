@@ -7,16 +7,20 @@ import {
 } from './domManipulation.js';
 
 const container = document.querySelector('#container');
-const content = createElementWithClass('div', 'content');
 
 export default function showHomeTab() {
+    const content = createElementWithClass('div', 'content');
     if(content.id !== 'home-tab') {
         removeCurrentTab()
+
         content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
+
         content.id = 'home-tab';
-        firstSection();
-        secondSection();
-    };
+
+        content.append(firstSection(), secondSection());
+
+        container.appendChild(content);
+    }
 };
 
 function firstSection() {
@@ -33,9 +37,8 @@ function firstSection() {
     
     row.appendChild(sideTextDiv);
     row.appendChild(img);
-    
-    content.appendChild(row);
-    container.append(content);
+
+    return row
 };
 
 function secondSection() {
@@ -52,6 +55,6 @@ function secondSection() {
     
     row.appendChild(img);
     row.appendChild(sideTextDiv);
-    
-    content.appendChild(row);
+
+    return row
 };

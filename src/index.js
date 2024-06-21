@@ -1,38 +1,36 @@
 import './style.css';
+import { paintBtn, removeBtnsPaint } from './domManipulation.js';
 import showHomeTab from './home.js';
-import { 
-    paintBtn,
-    removeBtnsPaint
-} from './domManipulation.js';
+import showMenuTab from './menu.js'
 
 const homeBtn = document.querySelector('#home');
 const menuBtn = document.querySelector('#menu');
-const contactBtn = document.querySelector('#contact');
-const aboutBtn = document.querySelector('#about');
+// const contactBtn = document.querySelector('#contact');
+// const aboutBtn = document.querySelector('#about');
 
 window.onload = paintBtn(homeBtn), showHomeTab();
 
 homeBtn.addEventListener('click', () =>{
+    showHomeTab();
     removeBtnsPaint();
     paintBtn(homeBtn);
-    showHomeTab();
 });
 
 menuBtn.addEventListener('click', () => {
+    showMenuTab();
     removeBtnsPaint();
     paintBtn(menuBtn);
-    showHomeTab();
 });
 
-contactBtn.addEventListener('click', () => {
-    removeBtnsPaint();
-    paintBtn(contactBtn);
-    // showContactTab();
-});
+// contactBtn.addEventListener('click', () => {
+//     removeBtnsPaint();
+//     paintBtn(contactBtn);
+//     // showContactTab();
+// });
 
-aboutBtn.addEventListener('click', () => {
-    removeBtnsPaint();
-    paintBtn(aboutBtn);
-    // showAboutTab();
-});
+// aboutBtn.addEventListener('click', () => {
+//     removeBtnsPaint();
+//     paintBtn(aboutBtn);
+//     // showAboutTab();
+// });
 

@@ -26,7 +26,7 @@ input, button, textarea, select { font: inherit; }
 
 body {
     font-family: 'Noto Serif';
-    background: url(../assets/wallpaper_coffee.jpeg);
+    background: url(../assets/wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--bone);
@@ -100,16 +100,18 @@ button:hover {
     font-size: 2rem;
     flex-basis: 100%;
     text-align: center;
+    align-self: flex-start;
+    
 }
 
-.row {
+#home-tab > .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 2em;
 }
 
-.row > img{
+#home-tab > .row > img {
     width: 300px;
     height: 300px;
 
@@ -137,8 +139,39 @@ button:hover {
 
 /* Menu Tab */
 
+#menu-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+}
 
 
+.menu-item {
+    flex-basis: 45%;
+    height: min-content;
+}
+
+.menu-item > img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.menu-item > img:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.menu-item > .label {
+    margin: 5px;
+    font-size: 1.4rem;
+}
 /* Contact Tab */
 
 
