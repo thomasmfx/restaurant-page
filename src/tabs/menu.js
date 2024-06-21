@@ -4,7 +4,7 @@ import {
     createElementWithClass,
     createImgWithSrc,
     removeCurrentTab
-} from './domManipulation.js';
+} from '../domManipulation.js';
 
 const container = document.querySelector('#container');
 

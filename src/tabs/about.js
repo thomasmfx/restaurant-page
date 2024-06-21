@@ -3,7 +3,7 @@ import {
     createElementWithId,
     createElementWithClass,
     removeCurrentTab
-} from './domManipulation.js';
+} from '../domManipulation.js';
 
 const container = document.querySelector('#container');
 const wrapper = createElementWithId('div', 'about-wrapper');

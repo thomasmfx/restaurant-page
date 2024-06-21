@@ -1,9 +1,9 @@
 import './style.css';
 import { paintBtn, removeBtnsPaint } from './domManipulation.js';
-import showHomeTab from './home.js';
-import showMenuTab from './menu.js';
-import showContactTab from './contact.js';
-import showAboutTab from './about';
+import showHomeTab from './tabs/home.js';
+import showMenuTab from './tabs/menu.js';
+import showContactTab from './tabs/contact.js';
+import showAboutTab from './tabs/about';
 
 const homeBtn = document.querySelector('#home');
 const menuBtn = document.querySelector('#menu');
