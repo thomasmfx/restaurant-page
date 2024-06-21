@@ -10,7 +10,7 @@ const container = document.querySelector('#container');
 
 export default function showContactTab() {
     const content = createElementWithClass('div', 'content');
-    const meansOfContat = createElementWithId('div', 'means-of-contact')
+    const meansOfContat = createElementWithId('div', 'means-of-contact');
     if(content.id !== 'contact-tab') {
         removeCurrentTab();
         content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
@@ -29,7 +29,7 @@ export default function showContactTab() {
 
 // Icon b4 heading
 function meanTemplate(iconSrc, heading, text) {
-    const mean = createElementWithClass('div', 'mean')
+    const mean = createElementWithClass('div', 'mean');
     mean.append(
         createImgWithSrc(`${iconSrc}`),
         createElement('h2', `${heading}`),
@@ -41,7 +41,7 @@ function meanTemplate(iconSrc, heading, text) {
 
 // Heading b4 icon
 function meanTemplateTwo(heading, iconSrc, text) {
-    const mean = createElementWithClass('div', 'mean')
+    const mean = createElementWithClass('div', 'mean');
     mean.append(
         createElement('h2', `${heading}`),
         createImgWithSrc(`${iconSrc}`),

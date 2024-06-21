@@ -1,7 +1,7 @@
 import './style.css';
 import { paintBtn, removeBtnsPaint } from './domManipulation.js';
 import showHomeTab from './home.js';
-import showMenuTab from './menu.js'
+import showMenuTab from './menu.js';
 import showContactTab from './contact.js';
 import showAboutTab from './about';
 

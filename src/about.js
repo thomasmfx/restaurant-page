@@ -20,7 +20,7 @@ wrapper.append(
 export default function showAboutTab() {
     const content = createElementWithClass('div', 'content');
     if(content.id !== 'about-tab') {
-        removeCurrentTab()
+        removeCurrentTab();
         content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
         content.id = 'about-tab';
 

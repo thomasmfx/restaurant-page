@@ -11,16 +11,13 @@ const container = document.querySelector('#container');
 export default function showHomeTab() {
     const content = createElementWithClass('div', 'content');
     if(content.id !== 'home-tab') {
-        removeCurrentTab()
-
+        removeCurrentTab();
         content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
-
         content.id = 'home-tab';
 
         content.append(firstSection(), secondSection());
-
         container.appendChild(content);
-    }
+    };
 };
 
 function firstSection() {
@@ -38,7 +35,7 @@ function firstSection() {
     row.appendChild(sideTextDiv);
     row.appendChild(img);
 
-    return row
+    return row;
 };
 
 function secondSection() {
@@ -56,5 +53,5 @@ function secondSection() {
     row.appendChild(img);
     row.appendChild(sideTextDiv);
 
-    return row
+    return row;
 };
