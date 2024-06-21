@@ -101,7 +101,7 @@ button:hover {
     flex-basis: 100%;
     text-align: center;
     align-self: flex-start;
-    
+
 }
 
 #home-tab > .row {
@@ -114,7 +114,6 @@ button:hover {
 #home-tab > .row > img {
     width: 300px;
     height: 300px;
-
     border-radius: 10px;
 }
 
@@ -178,3 +177,17 @@ button:hover {
 
 /* About Tab */
 
+#about-wrapper {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#about-wrapper > h2 {
+    margin-bottom: 0.3em;
+}
+
+#about-wrapper > p {
+    margin-bottom: 2em;
+}

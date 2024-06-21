@@ -2,11 +2,13 @@ import './style.css';
 import { paintBtn, removeBtnsPaint } from './domManipulation.js';
 import showHomeTab from './home.js';
 import showMenuTab from './menu.js'
+// import showContactTab from './contact.js';
+import showAboutTab from './about';
 
 const homeBtn = document.querySelector('#home');
 const menuBtn = document.querySelector('#menu');
 // const contactBtn = document.querySelector('#contact');
-// const aboutBtn = document.querySelector('#about');
+const aboutBtn = document.querySelector('#about');
 
 window.onload = paintBtn(homeBtn), showHomeTab();
 
@@ -28,9 +30,9 @@ menuBtn.addEventListener('click', () => {
 //     // showContactTab();
 // });
 
-// aboutBtn.addEventListener('click', () => {
-//     removeBtnsPaint();
-//     paintBtn(aboutBtn);
-//     // showAboutTab();
-// });
+aboutBtn.addEventListener('click', () => {
+    removeBtnsPaint();
+    paintBtn(aboutBtn);
+    showAboutTab();
+});
 
