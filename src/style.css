@@ -173,7 +173,28 @@ button:hover {
 }
 /* Contact Tab */
 
+#means-of-contact {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 1.2rem;
+    row-gap: 3em;
+}
 
+.mean {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    column-gap: 10px;
+}
+
+.mean > p {
+    text-align: center;
+    flex-basis: 100%;
+}
 
 /* About Tab */
 
