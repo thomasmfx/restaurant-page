@@ -27,7 +27,7 @@ function firstSection() {
     const sideTextDiv = createElementWithClass('div', 'text');
     const sideTextPara = createElement('p', textOne);
     const sideTextHeading = createElement('h2', 'Pure Elegance in Every Sip');
-    const img = createImgWithSrc('../assets/home/first_image.jpg');
+    const img = createImgWithSrc('../../assets/home/first_image.jpg');
 
     sideTextDiv.appendChild(sideTextHeading);
     sideTextDiv.appendChild(sideTextPara);
@@ -45,7 +45,7 @@ function secondSection() {
     const sideTextDiv = createElementWithClass('div', 'text');
     const sideTextPara = createElement('p', textTwo);
     const sideTextHeading = createElement('h2', 'More Enjoyable with Friends');
-    const img = createImgWithSrc('../assets/home/second_image.jpg');
+    const img = createImgWithSrc('../../assets/home/second_image.jpg');
 
     sideTextDiv.appendChild(sideTextHeading);
     sideTextDiv.appendChild(sideTextPara);

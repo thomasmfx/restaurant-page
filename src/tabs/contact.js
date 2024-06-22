@@ -17,10 +17,10 @@ export default function showContactTab() {
         content.id = 'contact-tab';
 
         meansOfContat.append(
-            meanTemplate('../assets/contact/map-pin.svg', 'Address', '771 Coffee Street, Culinary City'),
-            meanTemplateTwo('Phone', '../assets/contact/phone.svg', '(515) 263-4847'),
-            meanTemplate('../assets/contact/instagram.svg', 'Instagram', '@soulcoffee'),
-            meanTemplateTwo('E-mail', '../assets/contact/mail.svg', 'soul.coffee@gmail.com')
+            meanTemplate('../../assets/contact/map-pin.svg', 'Address', '771 Coffee Street, Culinary City'),
+            meanTemplateTwo('Phone', '../../assets/contact/phone.svg', '(515) 263-4847'),
+            meanTemplate('../../assets/contact/instagram.svg', 'Instagram', '@soulcoffee'),
+            meanTemplateTwo('E-mail', '../../assets/contact/mail.svg', 'soul.coffee@gmail.com')
         );
         content.appendChild(meansOfContat);
         container.appendChild(content);

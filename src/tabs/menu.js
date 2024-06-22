@@ -15,10 +15,10 @@ export default function showMenuTab() {
         content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
         content.id = 'menu-tab';
         content.append(
-            createItem('Expresso', '$3','../assets/menu/expresso_coffee.jpg'),
-            createItem('Latte', '$7', '../assets/menu/latte_coffee.jpg'),
-            createItem('Special Hot Chocolate', '$10', '../assets/menu/special_hot_chocolate.jpg'),
-            createItem('Takeaway Coffee', '$5', '../assets/menu/takeaway_coffee.jpg')
+            createItem('Expresso', '$3','../../assets/menu/expresso_coffee.jpg'),
+            createItem('Latte', '$7', '../../assets/menu/latte_coffee.jpg'),
+            createItem('Special Hot Chocolate', '$10', '../../assets/menu/special_hot_chocolate.jpg'),
+            createItem('Takeaway Coffee', '$5', '../../assets/menu/takeaway_coffee.jpg')
         );
         container.appendChild(content);
     }
