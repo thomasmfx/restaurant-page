@@ -7,7 +7,6 @@ import {
 } from '../domManipulation.js';
 import firstImage from '../../assets/home/first_image.jpg';
 import secondImage from '../../assets/home/second_image.jpg';
-
 const container = document.querySelector('#container');
 
 export default function showHomeTab() {
