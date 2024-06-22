@@ -1,4 +1,5 @@
 import './style.css';
+import favicon from '../assets/favicon.svg';
 import { paintBtn, removeBtnsPaint } from './domManipulation.js';
 import showHomeTab from './tabs/home.js';
 import showMenuTab from './tabs/menu.js';
@@ -36,3 +37,12 @@ aboutBtn.addEventListener('click', () => {
     showAboutTab();
 });
 
+function setFavicon(favImg){
+    let headTitle = document.querySelector('head');
+    let setFavicon = document.createElement('link');
+    setFavicon.setAttribute('rel','shortcut icon');
+    setFavicon.setAttribute('href',favImg);
+    headTitle.appendChild(setFavicon);
+}
+
+setFavicon('../assets/favicon.svg');
