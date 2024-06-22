@@ -45,4 +45,4 @@ function setFavicon(favImg){
     headTitle.appendChild(setFavicon);
 }
 
-setFavicon('../assets/favicon.svg');
+setFavicon(favicon);
