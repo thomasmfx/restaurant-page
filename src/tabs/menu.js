@@ -5,6 +5,10 @@ import {
     createImgWithSrc,
     removeCurrentTab
 } from '../domManipulation.js';
+import expressoImg from '../../assets/menu/expresso_coffee.jpg';
+import latteImg from '../../assets/menu/latte_coffee.jpg';
+import chocoImg from '../../assets/menu/special_hot_chocolate.jpg';
+import takeawayImg from '../../assets/menu/takeaway_coffee.jpg';
 
 const container = document.querySelector('#container');
 
@@ -15,10 +19,10 @@ export default function showMenuTab() {
         content.appendChild(createElementWithId('h1', 'heading', 'Soul Coffee'));
         content.id = 'menu-tab';
         content.append(
-            createItem('Expresso', '$3','../../assets/menu/expresso_coffee.jpg'),
-            createItem('Latte', '$7', '../../assets/menu/latte_coffee.jpg'),
-            createItem('Special Hot Chocolate', '$10', '../../assets/menu/special_hot_chocolate.jpg'),
-            createItem('Takeaway Coffee', '$5', '../../assets/menu/takeaway_coffee.jpg')
+            createItem('Expresso', '$3', expressoImg),
+            createItem('Latte', '$7', latteImg),
+            createItem('Special Hot Chocolate', '$10', chocoImg),
+            createItem('Takeaway Coffee', '$5', takeawayImg)
         );
         container.appendChild(content);
     }

@@ -5,6 +5,10 @@ import {
     createImgWithSrc,
     removeCurrentTab
 } from '../domManipulation.js';
+import addresImg from '../../assets/contact/map-pin.svg';
+import phoneImg from '../../assets/contact/phone.svg';
+import instagramImg from '../../assets/contact/instagram.svg';
+import emailImg from '../../assets/contact/mail.svg';
 
 const container = document.querySelector('#container');
 
@@ -17,10 +21,10 @@ export default function showContactTab() {
         content.id = 'contact-tab';
 
         meansOfContat.append(
-            meanTemplate('../../assets/contact/map-pin.svg', 'Address', '771 Coffee Street, Culinary City'),
-            meanTemplateTwo('Phone', '../../assets/contact/phone.svg', '(515) 263-4847'),
-            meanTemplate('../../assets/contact/instagram.svg', 'Instagram', '@soulcoffee'),
-            meanTemplateTwo('E-mail', '../../assets/contact/mail.svg', 'soul.coffee@gmail.com')
+            meanTemplate(addresImg, 'Address', '771 Coffee Street, Culinary City'),
+            meanTemplateTwo('Phone', phoneImg, '(515) 263-4847'),
+            meanTemplate(instagramImg, 'Instagram', '@soulcoffee'),
+            meanTemplateTwo('E-mail', emailImg, 'soul.coffee@gmail.com')
         );
         content.appendChild(meansOfContat);
         container.appendChild(content);
